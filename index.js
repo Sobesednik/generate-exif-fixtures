@@ -1,5 +1,6 @@
 const path = require('path')
 const cp = require('child_process')
+const caption = require('caption')
 
 const args = process.argv
 
@@ -145,6 +146,12 @@ function generateFixture(file) {
         executeCommand(sp)
         const et = getExiftoolWriteCommand(orientation, outfile, null, author, true)
         executeCommand(et)
+        caption.path(outfile, {
+            caption : String(orientation),
+            outputFile : outfile,
+        }, (err, filename) => {
+            console.log('caption %s added to %s', orientation, outfile)
+        })
     })
 }
 
