@@ -1,0 +1,27 @@
+{
+  "name": "generate-exif-fixtures",
+  "version": "1.0.0",
+  "description": "A node script to generate exif orientation fixtures",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sobesednik/generate-exif-fixtures.git"
+  },
+  "keywords": [
+    "exif",
+    "test",
+    "fixtures"
+  ],
+  "author": "Anton <anton@sobesednik.media>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sobesednik/generate-exif-fixtures/issues"
+  },
+  "homepage": "https://github.com/Sobesednik/generate-exif-fixtures#readme",
+  "dependencies": {
+    "caption": "^0.1.1"
+  }
+}
